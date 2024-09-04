@@ -1,0 +1,19 @@
+spring:
+ application.name: trackingSystem
+#spring.datasource.url=jdbc:postgresql://localhost:5432/tracking_db?rewriteBatchedStatements=true
+spring.jpa:
+  properties.hibernate.dialect : org.hibernate.dialect.PostgreSQLDialect
+#Hibernate ddl auto (create,create-drop,validate,update)
+hibernate.ddl-auto : update
+hibernate.show-sql : true
+
+datasource:
+url : jdbc:postgresql://localhost:5432/tracking_db
+username : postgres
+password : postgres
+driver-class-name : org.postgresql.Driver
+logging.level.org.hibernate:
+sql : DEBUG
+type : TRACE
+
+server.servlet.context-path : /
