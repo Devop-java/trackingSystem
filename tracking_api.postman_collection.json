@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "1b5fbcf4-991e-4105-9ad2-90dce724d751",
+		"name": "tracking_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "631594"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/parsel/save",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"originCountryId\":\"91\",\"destinationCountryId\":\"91\",\"weight\":\"34gm\",\"customerId\":\"17\",\"customerName\":\"Ankit Kumar\",\"customerSlug\":\"Blue-Dart\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/parsel/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parsel",
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
